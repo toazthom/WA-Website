@@ -3,25 +3,63 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>Writing Architect</title>
+        <title>Home - Thomas Toaz</title>
         <link rel="stylesheet" href="../static/main/css/header.css" />
+        <link rel="stylesheet" href="../static/main/css/navbar.css" />
+        <link rel="stylesheet" href="../static/main/css/main.css" />
+        <link rel="stylesheet" href="../static/main/css/footer.css" />
     </head>
-    <body>
-        <header class = "banner">
-            <img class="logo" src="../static/main/images/wa-logo.png" alt="image" />
+    <body class = "banner">
+        <header> <!--Banner image for the top of the web page-->
+            <img class="header" src="../static/main/images/banner.jpg" alt="Rocky Background" />
         </header>
         <nav>  <!--Navigation bar with links to other pages and project title-->
             <ul class="fullscreen">
-                <li class = "left"><a>Writing Architect</a></li>
+                <li class = "left"><a>CSE 477 - Homework 1</a></li>
                 <li><a class = "link" href="home.html">Home</a></li>
-                <li><a class = "link" href="projects.html">Research</a></li>
-                <li><a class = "link">Educators</a></li>
-                <li><a class = "link" href="https://www.linkedin.com/in/thomas-toaz-368002266/"><img src="../static/main/images/social-linkedin.png" alt="image" /></a></li>
+                <li><a class = "link" href="projects.html">Projects</a></li>
+                <li><a class = "link" href="../static/main/images/resume.pdf" target="_blank">Resume</a></li>
+                <li><a class = "link" href="https://www.linkedin.com/in/thomas-toaz-368002266/" target="_blank"><img src="../static/main/images/social-linkedin.png" alt="LinkedIn" /></a></li>
             </ul>
             <ul class="menubar">
-                <li class = "left"><a>Writing Architect</a></li>
-                <li><a class="link"><img class="menudrop" src="../static/main/images/menu-bar.png" alt="image" /></a></li>
+                <li class = "left"><a>CSE 477 - Homework 1</a></li>
+                <li><!--Checkbox to make menu button toggle on/off dropdown menu visibility-->
+                    <label class="switch">
+                        <a class="link"><img class="menuicon" src="../static/main/images/menu-bar.png" alt="Menu" /></a>
+                        <input type="checkbox">
+                        <span class="dropdown-menu">
+                            <ul>
+                                <li><a class = "link" href="home.html">Home</a></li>
+                                <li><a class = "link" href="projects.html">Projects</a></li>
+                                <li><a class = "link" href="../static/main/images/resume.pdf" target="_blank">Resume</a></li>
+                                <li><a class = "link" href="https://www.linkedin.com/in/thomas-toaz-368002266/" target="_blank">LinkedIn</a></li>
+                            </ul>
+                        </span>
+                    </label>
+                </li>
             </ul>
         </nav>
+        <main>
+            <section class="wrapper">
+                <div class="box"><img class="headshot" src="../static/main/images/self-photo.jpg" alt="Picture of Thomas Toaz" /></div>
+                <div class="description">
+                    <p>
+                        <span>Thomas Toaz</span> is a junior at Michigan state university. He is pursuing a degree in computer science
+                        and is anticipating graduating with his gradute degree this coming spring. Outside of his studies, Thomas is a squad leader
+                        in the Spartan Marching Band where he plays the baritone, and also is a member of the MSU fencing club. <br><br>
+                        Thomas recently completed an internship at Jovian Software consulting, a defence contractor where he worked on mission 
+                        planning software utilizing augmented and virtual reality. For the past three years he has also worked as an undergraduate
+                        research assistant under the mentorship of Dr. Adrea Truckenmiller, helping to develop the <a href="https://writing-architect.netlify.app/#/" target="_blank">Writing Architect.</a>
+
+                    </p>
+                </div>
+            </section>
+            <hr>
+             <p class="funFactTitle">A Fun Fact About Me:</p>
+             <p class="funfact">My favorite color is neon light blue</p>
+        </main>
+        <footer>
+            <p>©Copyright 2024 by Thomas Toaz. All rights reversed.</p>
+        </footer>
     </body>
 </html>
